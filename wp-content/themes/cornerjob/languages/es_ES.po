@@ -1,0 +1,189 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-05-11 12:38+0200\n"
+"PO-Revision-Date: 2018-05-11 12:39+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: footer.php:43
+msgid ""
+"Congratulations! You have successfully subscribed to CornerJob's newsletter."
+msgstr ""
+"¡Enhorabuena! Te has suscrito con éxito al boletín mensual de nuestro blog."
+
+#: footer.php:45
+msgid ""
+"You'll receive a confirmation email in a few minutes. Please follow the link "
+"to confirm your subscription. If the email takes more than 15 minutes to "
+"appear in your mailbox, please check your spam folder."
+msgstr ""
+"En unos minutos recibirás un email de confirmación. Solo te pedimos dar clic "
+"en el enlace para confirmar tu suscripción. Si el correo electrónico tarda "
+"más de 15 minutos en aparecer en tu buzón, por favor, revisa en tu carpeta "
+"de correo no deseado."
+
+#: footer.php:75
+msgid "Subscribe"
+msgstr "Suscríbete"
+
+#: footer.php:76
+msgid "Subscribe to the blog"
+msgstr "Suscríbete al blog"
+
+#: footer.php:76
+msgid "Your mail"
+msgstr "Tu correo"
+
+#: footer.php:78
+msgid ""
+"I accept that CornerJob sends me news and promotions of its own or related "
+"entities, and surveys."
+msgstr ""
+"Acepto que CornerJob me remita noticias y promociones propias, de entidades "
+"relacionadas y encuestas."
+
+#: footer.php:78
+msgid "More info"
+msgstr "Más info"
+
+#: functions.php:44
+msgid "Posts groups"
+msgstr "Grupos de entradas"
+
+#: functions.php:45
+msgid "Posts group"
+msgstr "Grupo de entradas"
+
+#: functions.php:46
+msgid "New posts group"
+msgstr "Nuevo grupo de publicaciones"
+
+#: functions.php:47
+msgid "Add posts group"
+msgstr "Añadir grupo de publicaciones"
+
+#: functions.php:132
+msgid "Header Menu"
+msgstr "Menú de la cabecera"
+
+#: functions.php:285
+msgid "Post views"
+msgstr "Visitas al post"
+
+#: header.php:59
+msgid "Categories"
+msgstr "Categorías"
+
+#: includes/gc-customize-jetpack.php:34
+msgid "Load more"
+msgstr "Cargar más"
+
+#: includes/metaboxes.php:11
+msgid "Author information"
+msgstr "Información del autor"
+
+#: includes/metaboxes.php:18
+msgid "Name"
+msgstr "Nombre"
+
+#: includes/metaboxes.php:24
+msgid "Position"
+msgstr "Puesto"
+
+#: includes/metaboxes.php:30
+msgid "Twitter name"
+msgstr "Usuario de Twitter"
+
+#: includes/metaboxes.php:36
+msgid "Picture"
+msgstr "Fotografía"
+
+#: includes/metaboxes.php:46
+msgid "Banner"
+msgstr "Banner"
+
+#: includes/metaboxes.php:52
+msgid "Image"
+msgstr "Imagen"
+
+#: includes/metaboxes.php:59
+msgid "Link title"
+msgstr "Título del enlace"
+
+#: includes/metaboxes.php:65
+msgid "Link URL"
+msgstr "URL del enlace"
+
+#: includes/theme_customizer.php:37
+msgid "Home"
+msgstr "Home"
+
+#: includes/theme_customizer.php:43
+msgid "Select"
+msgstr "Seleccionar"
+
+#: includes/theme_customizer.php:52
+msgid "Select posts group to display in Home Slider"
+msgstr "Selecciona el grupo de entradas para mostrar en el carrusel de la Home"
+
+#: includes/theme_customizer.php:67
+msgid "Footer"
+msgstr "Pie de página"
+
+#: includes/theme_customizer.php:73 includes/theme_customizer.php:81
+#: includes/theme_customizer.php:89 includes/theme_customizer.php:97
+#: includes/theme_customizer.php:105
+msgid "Footer text"
+msgstr "Texto del pie"
+
+#: index.php:20
+msgid "Search Results for"
+msgstr "Resultados de búsqueda para"
+
+#: searchform.php:3 searchform.php:4
+msgid "Search"
+msgstr "Buscar"
+
+#: single.php:14 single.php:36 single.php:59
+msgid "Published"
+msgstr "Publicado"
+
+#: single.php:15 single.php:37 single.php:58
+#: template-parts/content-featured.php:5
+msgid "min read"
+msgstr "min. lectura"
+
+#: single.php:73
+msgid "Share this post via"
+msgstr "Comparte este artículo vía"
+
+#: single.php:131
+msgid "Other posts"
+msgstr "Otras publicaciones"
+
+#: template-parts/loop-noresults.php:5
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+#: template-parts/loop-noresults.php:11
+msgid "Sorry, no post were found, check out our categories."
+msgstr ""
+"Lo sentimos, no se han encontrado artículos. Prueba desde nuestro menú de "
+"categorías."
+
+#~ msgid "Sign up for our newsletter"
+#~ msgstr "Suscríbete a nuestra newsletter"
+
+#~ msgid "Try it for free"
+#~ msgstr "Pruébalo gratis"
+
+#~ msgid "View Article"
+#~ msgstr "Ver artículo"
