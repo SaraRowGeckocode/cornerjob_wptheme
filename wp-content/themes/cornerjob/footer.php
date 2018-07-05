@@ -38,44 +38,52 @@
 
 		<div class="subscription-form">
 			<?php 
+			// language variables
+			$listID = 0;
+			$termsUrl = 'https://s3-eu-west-1.amazonaws.com/cornerjob-cdn/terms-and-conditions/fr/CJ_PrivacyPolicy.pdf';
+			if(function_exists('pll_current_language')) {
+				$lang = pll_current_language();
+				switch($lang){
+					case 'en':
+						$listID = 1;
+						break;
+					case 'es':
+						$listID = 2;
+						$termsUrl = 'https://s3-eu-west-1.amazonaws.com/cornerjob-cdn/terms-and-conditions/es/CJ_PrivacyPolicy.pdf';
+						break;
+					case 'fr':
+						$listID = 3;
+						$termsUrl = 'https://s3-eu-west-1.amazonaws.com/cornerjob-cdn/terms-and-conditions/fr/CJ_PrivacyPolicy.pdf';
+						break;
+					case 'it':
+						$listID = 4;
+						$termsUrl = 'https://s3-eu-west-1.amazonaws.com/cornerjob-cdn/terms-and-conditions/it/CJ_PrivacyPolicy.pdf';
+						break;
+					case 'mx':
+						$listID = 5;
+						$termsUrl = 'https://s3-eu-west-1.amazonaws.com/cornerjob-cdn/terms-and-conditions/es/CJ_PrivacyPolicy.pdf';
+						break;
+					default:
+						$listID = 3;
+						break;
+				} 
+			}
+
+			// subscription form sended
 			if(isset($_GET['nk'])) {
 				echo '<p class="success green-text"><strong>'.
 					__("Congratulations! You have successfully subscribed to CornerJob's newsletter.",'cornerjob').
 					'</strong><br>'.
 					__("You'll receive a confirmation email in a few minutes. Please follow the link to confirm your subscription. If the email takes more than 15 minutes to appear in your mailbox, please check your spam folder.",'cornerjob').
 					'</p>';
-			} else {
-				$listID = 0;
-				if(function_exists('pll_current_language')) {
-					$lang = pll_current_language();
-					switch($lang){
-						case 'en':
-							$listID = 1;
-							break;
-						case 'es':
-							$listID = 2;
-							break;
-						case 'fr':
-							$listID = 3;
-							break;
-						case 'it':
-							$listID = 4;
-							break;
-						case 'mx':
-							$listID = 5;
-							break;
-						default:
-							$listID = 3;
-							break;
-					} 
-				} ?>
-				<?php 
-				$url = '#';
+			} 
+			// subscription form NOT sended
+			else {
 				echo do_shortcode(
 					'[newsletter_form button_label="'.__('Subscribe','cornerjob').'" confirmation_url="'.get_the_permalink().'"]'.
 					'[newsletter_field name="email" label="'.__('Subscribe to the blog','cornerjob').'" placeholder="'.__('Your mail','cornerjob').'"]'.
 					'[newsletter_field name="preference" number="'.$listID.'" hidden="true"]'.
-					'[newsletter_field name="privacy" url="" label="'. __('I accept that CornerJob sends me news and promotions of its own or related entities, and surveys.','cornerjob'). ' <a href=\''. $url .'\' target=\'_blank\'>'. __('More info','cornerjob'). '</a>."]'.
+					'[newsletter_field name="privacy" url="" label="'. __('I accept that CornerJob sends me news and promotions of its own or related entities, and surveys.','cornerjob'). ' <a href=\''. $termsUrl .'\' target=\'_blank\'>'. __('More info','cornerjob'). '</a>"]'.
 					'[/newsletter_form]'
 				);
 			}
