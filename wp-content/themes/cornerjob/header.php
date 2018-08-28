@@ -4,14 +4,7 @@
 	<meta name="google-site-verification" content="GDEzCctuk1x8Go3Wj0k0LPg5foToYjFR1EppmEjmDXU" />
 	<meta charset="<?php bloginfo('charset'); ?>">
 
-	<!-- favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/images/favicon/manifest.json">
-	<link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon/safari-pinned-tab.svg" color="#0097c4">
-	<meta name="theme-color" content="#0097c4">
-    <!-- / favicon -->
+	<?php favicon(); ?>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">

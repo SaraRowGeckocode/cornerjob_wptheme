@@ -68,6 +68,25 @@ function GC_meta_boxes( $meta_boxes ) {
             )
         )
     );
+
+
+    $meta_boxes[] = array(
+        'id'         => 'form',
+        'title'      => __('Form Column','cornerjob'),
+        'post_types' => array( 'page' ),
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields' => array(
+            array(
+                'id' => $prefix . 'form-column',
+                'name' => __( 'Form Column', 'elmacare' ),
+                'type' => 'wysiwyg'
+            ),
+        ),
+        'only_on' => array(
+            'template' => array( 'tpl-landing-ebook.php')
+        )
+    );
     
 
 

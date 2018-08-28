@@ -75,15 +75,21 @@ add_action( 'init', 'GC_unregister_tags' );
 // Load scripts (header.php)
 function GC_header_scripts(){
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
+        $template = get_template_directory_uri();
 
-        wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1',true);
+        wp_register_script('modernizr', $template .'/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1',true);
         wp_enqueue_script('modernizr');
 
-        wp_register_script('materialize', get_template_directory_uri() . '/js/lib/materialize.min.js', array('jquery'), '0.97.7', true);
-        wp_register_script('slick', get_template_directory_uri() . '/js/lib/slick/slick.min.js', array('jquery'), '1.5.7', true);
 
-        wp_register_script('cornerjob', get_template_directory_uri() . '/js/scripts.min.js', array('jquery','materialize','slick'), '1.1.0', true); // Custom scripts
-        wp_enqueue_script('cornerjob');
+        if(is_page_template('tpl-landing-ebook.php')){
+            wp_enqueue_script('landing-ebook-js', $template .'/js/landing-ebook.js', array('jquery', 'nf-front-end'), '1.0.0', true);
+        } else {
+            wp_register_script('materialize', $template .'/js/lib/materialize.min.js', array('jquery'), '0.97.7', true);
+            wp_register_script('slick', $template .'/js/lib/slick/slick.min.js', array('jquery'), '1.5.7', true);
+
+            wp_register_script('cornerjob', $template .'/js/scripts.min.js', array('jquery','materialize','slick'), '1.1.0', true); // Custom scripts
+            wp_enqueue_script('cornerjob');
+        }
     }
 }
 
@@ -91,13 +97,14 @@ function GC_header_scripts(){
 // Load styles
 function GC_styles() {
     $template = get_template_directory_uri();
+
     wp_register_style('cornerjob-google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,500,600|Open+Sans:300,300i,400,600,700', array(), '1.0', 'all');
     //wp_register_style('material-icons',         '//fonts.googleapis.com/icon?family=Material+Icons', array(), '1.0', 'all');
-    wp_register_style('materialize',            $template . '/css/materialize.css', array(), '1.0', 'all');
-    wp_register_style('slick',                  $template . '/js/lib/slick/slick.css', array(), '1.5.7', 'all');
-    //wp_register_style('cornerjob-icons',        $template . '/fonts/cornerjob-icons/style.css', array(), '1.0', 'all');
+    wp_register_style('materialize',            $template .'/css/materialize.css', array(), '1.0.0', 'all');
+    wp_register_style('slick',                  $template .'/js/lib/slick/slick.css', array(), '1.5.7', 'all');
+    //wp_register_style('cornerjob-icons',        $template .'/fonts/cornerjob-icons/style.css', array(), '1.0', 'all');
 
-    wp_register_style('cornerjob', get_template_directory_uri() . '/style.css', 
+    wp_register_style('cornerjob', $template .'/style.css', 
         array(
             'cornerjob-google-fonts',
             //'material-icons',
@@ -105,7 +112,13 @@ function GC_styles() {
             'slick',
             //'cornerjob-icons'
         ), '1.2.1', 'all');
+
     wp_enqueue_style('cornerjob');
+
+    if(is_page_template('tpl-landing-ebook.php')){
+        wp_enqueue_style('cornerjob-google-fonts2', '//fonts.googleapis.com/css?family=Oswald:500', array(), '1.0', 'all');
+        wp_enqueue_style('landing-ebook', $template .'/css/landing-ebook.css', array(), '1.0.0', 'all');
+    }
 }
 
 function GC_defer_scripts($tag, $handle) {
@@ -294,13 +307,32 @@ function RT_admincolumns_content( $column, $post_id ) {
 }
 
 
+/* ==================
+    Favicon
+   ================= */
+function favicon(){
+    $template = get_template_directory_uri(); ?>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $template; ?>/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $template; ?>/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $template; ?>/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo $template; ?>/images/favicon/manifest.json">
+    <link rel="mask-icon" href="<?php echo $template; ?>/images/favicon/safari-pinned-tab.svg" color="#0097c4">
+    <meta name="theme-color" content="#0097c4">
+    <!-- / favicon -->
+<?php }
+
+
+
+
+
 
 /*------------------------------------*\
-	Actions + Filters + ShortCodes
+    Actions + Filters + ShortCodes
 \*------------------------------------*/
 
 // Add Actions
-add_action('init',              'GC_header_scripts'); // Add Custom Scripts to wp_head
+add_action('wp_enqueue_scripts','GC_header_scripts'); // Add Custom Scripts to wp_head
 add_action('wp_enqueue_scripts','GC_styles'); // Add Theme Stylesheet
 add_action('init',              'GC_register_menus'); // Add Menu Hooks
 add_action('widgets_init',      'GC_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
