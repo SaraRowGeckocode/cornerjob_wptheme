@@ -20,13 +20,16 @@
 		
 		<article <?php post_class(); ?>>
 			<div class="container">
+				
+
 				<div class="row">
-					<div class="col m6">
+					<div class="col l6">
+						<?php echo '<img src="'.get_template_directory_uri().'/images/logo-footer.svg" alt="'.get_bloginfo('name').'">'; ?>
 						<h1><?php the_title(); ?></h1>
 						<?php the_content() ?>
 					</div>
 
-					<div class="col m6 form-column">
+					<div class="col l6 form-column">
 						<?php echo apply_filters('the_content',rwmb_meta('GC_form-column')); ?>
 					</div>
 				</div>
@@ -35,6 +38,11 @@
 		</article>
 
 	<?php endwhile; ?>
+
+	<div class="footer">
+		<?php echo '<img src="'.get_template_directory_uri().'/images/CJ.svg" alt="">'; ?>
+		Cornerjob &copy;Copyright <?php echo date('Y'); ?>
+	</div>
 	
 	<?php wp_footer(); ?>
 

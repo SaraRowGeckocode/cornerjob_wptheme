@@ -82,7 +82,7 @@ function GC_header_scripts(){
 
 
         if(is_page_template('tpl-landing-ebook.php')){
-            wp_enqueue_script('landing-ebook-js', $template .'/js/landing-ebook.js', array('jquery', 'nf-front-end'), '1.0.0', true);
+            wp_enqueue_script('landing-ebook-js', $template .'/js/landing-ebook.js', array('jquery', 'nf-front-end'), '1.0.1', true);
         } else {
             wp_register_script('materialize', $template .'/js/lib/materialize.min.js', array('jquery'), '0.97.7', true);
             wp_register_script('slick', $template .'/js/lib/slick/slick.min.js', array('jquery'), '1.5.7', true);
@@ -117,7 +117,7 @@ function GC_styles() {
 
     if(is_page_template('tpl-landing-ebook.php')){
         wp_enqueue_style('cornerjob-google-fonts2', '//fonts.googleapis.com/css?family=Oswald:500', array(), '1.0', 'all');
-        wp_enqueue_style('landing-ebook', $template .'/css/landing-ebook.css', array(), '1.0.0', 'all');
+        wp_enqueue_style('landing-ebook', $template .'/css/landing-ebook.css', array(), '1.0.1', 'all');
     }
 }
 

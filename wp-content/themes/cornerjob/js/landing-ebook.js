@@ -8,9 +8,8 @@
 		$('.checkbox-container').each(function(){
 			$(this).find('.nf-field-element').append('<span class="fake-check"></span>');
 		})
-		$('.checkbox-container.label-hidden .nf-field-description').click(function(){
-			var checkbox = $(this).parent().find('.nf-field-element input');
-			checkbox.prop("checked", !checkbox.prop("checked"));
+		$('.checkbox-wrap').click(function(){
+			$(this).find('.nf-field-element input').click();
 		})
 	});
 	
