@@ -8,6 +8,8 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 .landing-ebook h1 + p { font-size: 1.8rem; }
 .landing-ebook figure { margin: 0; }
 .landing-ebook img.aligncenter { display: block; margin: 0 auto; }
+.landing-ebook .hentry ul { list-style: disc; padding: 0 0 0 30px; }
+.landing-ebook .hentry ul li { list-style: disc; }
 .landing-ebook .form-column { max-width: 470px; margin: 0 auto; }
 .landing-ebook .form-column h2 { font-size: 2rem; font-family: inherit; font-weight: bold; margin: 25px 0; }
 .landing-ebook .form-column form { color: #4a4a4a; }

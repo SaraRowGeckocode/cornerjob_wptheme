@@ -647,3 +647,12 @@ h1.search-title { font-size: 1.8rem; font-weight: bold; font-family: inherit; te
   .post-footer .post-banner { margin: 50px -20px 0; }
   .footer-actions .share-btns { display: inline-block; padding: 0; }
   .footer-actions .share-btns .sd-social-icon .sd-content ul li[class*=share-] { margin: 0 5px; } }
+/* NINJAFORMS UNSUBSCRIBE */
+.unsubscribe { text-align: center; }
+.unsubscribe > .container { min-height: 88vh; padding-top: 10vh; }
+.unsubscribe h1 { font-size: 4rem; }
+.unsubscribe .footer { font-size: 14px; }
+.unsubscribe .footer img { vertical-align: middle; margin-top: -4px; }
+
+/* FORMS NEWSLETTER */
+.tnp-profile form input[type=checkbox], .tnp-profile input[type=radio] { position: static; opacity: 1; }

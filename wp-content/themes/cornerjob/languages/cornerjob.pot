@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CornerJob\n"
-"POT-Creation-Date: 2018-05-11 12:38+0200\n"
+"POT-Creation-Date: 2018-10-10 07:36+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-KeywordsList: __;_e;_x\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -22,37 +22,37 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-4: languages\n"
 "X-Poedit-SearchPathExcluded-5: sass\n"
 
-#: footer.php:43
+#: footer.php:75
 msgid ""
 "Congratulations! You have successfully subscribed to CornerJob's newsletter."
 msgstr ""
 
-#: footer.php:45
+#: footer.php:77
 msgid ""
 "You'll receive a confirmation email in a few minutes. Please follow the link "
 "to confirm your subscription. If the email takes more than 15 minutes to "
 "appear in your mailbox, please check your spam folder."
 msgstr ""
 
-#: footer.php:75
+#: footer.php:83
 msgid "Subscribe"
 msgstr ""
 
-#: footer.php:76
+#: footer.php:84
 msgid "Subscribe to the blog"
 msgstr ""
 
-#: footer.php:76
+#: footer.php:84
 msgid "Your mail"
 msgstr ""
 
-#: footer.php:78
+#: footer.php:86
 msgid ""
 "I accept that CornerJob sends me news and promotions of its own or related "
 "entities, and surveys."
 msgstr ""
 
-#: footer.php:78
+#: footer.php:86
 msgid "More info"
 msgstr ""
 
@@ -72,15 +72,15 @@ msgstr ""
 msgid "Add posts group"
 msgstr ""
 
-#: functions.php:132
+#: functions.php:145
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:285
+#: functions.php:298
 msgid "Post views"
 msgstr ""
 
-#: header.php:59
+#: header.php:52
 msgid "Categories"
 msgstr ""
 
@@ -122,6 +122,18 @@ msgstr ""
 
 #: includes/metaboxes.php:65
 msgid "Link URL"
+msgstr ""
+
+#: includes/metaboxes.php:76 includes/metaboxes.php:83
+msgid "Form Column"
+msgstr ""
+
+#: includes/metaboxes.php:96
+msgid "Unsubscription Settings"
+msgstr ""
+
+#: includes/metaboxes.php:103
+msgid "Administrator Emails"
 msgstr ""
 
 #: includes/theme_customizer.php:37
@@ -177,4 +189,12 @@ msgstr ""
 
 #: template-parts/loop-noresults.php:11
 msgid "Sorry, no post were found, check out our categories."
+msgstr ""
+
+#: tpl-unsubscribe.php:43
+msgid "Ooops, there was an error."
+msgstr ""
+
+#: tpl-unsubscribe.php:44
+msgid "Email address is missing."
 msgstr ""

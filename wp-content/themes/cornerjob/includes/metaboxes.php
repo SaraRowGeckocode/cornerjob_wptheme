@@ -70,6 +70,7 @@ function GC_meta_boxes( $meta_boxes ) {
     );
 
 
+    // TPL landing ebook
     $meta_boxes[] = array(
         'id'         => 'form',
         'title'      => __('Form Column','cornerjob'),
@@ -85,6 +86,28 @@ function GC_meta_boxes( $meta_boxes ) {
         ),
         'only_on' => array(
             'template' => array( 'tpl-landing-ebook.php')
+        )
+    );
+
+
+    // TPL unsubscribe
+    $meta_boxes[] = array(
+        'id'         => 'unsubscribe-fields',
+        'title'      => __('Unsubscription Settings','cornerjob'),
+        'post_types' => array( 'page' ),
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields' => array(
+            array(
+                'id' => $prefix . 'emails',
+                'name' => __( 'Administrator Emails', 'elmacare' ),
+                'type' => 'email',
+                'clone'       => true,
+                'placeholder' => 'name@domain.com',
+            ),
+        ),
+        'only_on' => array(
+            'template' => array( 'tpl-unsubscribe.php')
         )
     );
     

@@ -111,13 +111,13 @@ function GC_styles() {
             'materialize',
             'slick',
             //'cornerjob-icons'
-        ), '1.2.1', 'all');
+        ), '1.2.3', 'all');
 
     wp_enqueue_style('cornerjob');
 
     if(is_page_template('tpl-landing-ebook.php')){
         wp_enqueue_style('cornerjob-google-fonts2', '//fonts.googleapis.com/css?family=Oswald:500', array(), '1.0', 'all');
-        wp_enqueue_style('landing-ebook', $template .'/css/landing-ebook.css', array(), '1.0.1', 'all');
+        wp_enqueue_style('landing-ebook', $template .'/css/landing-ebook.css', array(), '1.0.2', 'all');
     }
 }
 

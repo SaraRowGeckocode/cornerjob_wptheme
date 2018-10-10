@@ -555,3 +555,23 @@ h1.search-title {font-size:1.8rem; font-weight: bold; font-family:inherit; text-
 		}
 	}
 }
+
+
+/* NINJAFORMS UNSUBSCRIBE */
+.unsubscribe {
+	text-align: center;
+
+	> .container {min-height:88vh; padding-top: 10vh;}
+	h1 {font-size:4rem}
+	.footer {font-size:14px;
+		img {vertical-align: middle; margin-top: -4px;}
+	}
+}
+
+
+/* FORMS NEWSLETTER */
+.tnp-profile form input[type=checkbox], 
+.tnp-profile input[type=radio] {
+	position: static;
+	opacity:1;
+}
