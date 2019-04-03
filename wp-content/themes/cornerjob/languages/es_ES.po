@@ -1,25 +1,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-05-11 12:38+0200\n"
-"PO-Revision-Date: 2018-05-11 12:39+0200\n"
+"POT-Creation-Date: 2018-10-10 07:36+0200\n"
+"PO-Revision-Date: 2018-10-28 08:56+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: footer.php:43
+#: footer.php:75
 msgid ""
 "Congratulations! You have successfully subscribed to CornerJob's newsletter."
 msgstr ""
 "¡Enhorabuena! Te has suscrito con éxito al boletín mensual de nuestro blog."
 
-#: footer.php:45
+#: footer.php:77
 msgid ""
 "You'll receive a confirmation email in a few minutes. Please follow the link "
 "to confirm your subscription. If the email takes more than 15 minutes to "
@@ -30,19 +30,19 @@ msgstr ""
 "más de 15 minutos en aparecer en tu buzón, por favor, revisa en tu carpeta "
 "de correo no deseado."
 
-#: footer.php:75
+#: footer.php:83
 msgid "Subscribe"
 msgstr "Suscríbete"
 
-#: footer.php:76
+#: footer.php:84
 msgid "Subscribe to the blog"
 msgstr "Suscríbete al blog"
 
-#: footer.php:76
+#: footer.php:84
 msgid "Your mail"
 msgstr "Tu correo"
 
-#: footer.php:78
+#: footer.php:86
 msgid ""
 "I accept that CornerJob sends me news and promotions of its own or related "
 "entities, and surveys."
@@ -50,7 +50,7 @@ msgstr ""
 "Acepto que CornerJob me remita noticias y promociones propias, de entidades "
 "relacionadas y encuestas."
 
-#: footer.php:78
+#: footer.php:86
 msgid "More info"
 msgstr "Más info"
 
@@ -70,15 +70,15 @@ msgstr "Nuevo grupo de publicaciones"
 msgid "Add posts group"
 msgstr "Añadir grupo de publicaciones"
 
-#: functions.php:132
+#: functions.php:145
 msgid "Header Menu"
 msgstr "Menú de la cabecera"
 
-#: functions.php:285
+#: functions.php:298
 msgid "Post views"
 msgstr "Visitas al post"
 
-#: header.php:59
+#: header.php:52
 msgid "Categories"
 msgstr "Categorías"
 
@@ -121,6 +121,18 @@ msgstr "Título del enlace"
 #: includes/metaboxes.php:65
 msgid "Link URL"
 msgstr "URL del enlace"
+
+#: includes/metaboxes.php:76 includes/metaboxes.php:83
+msgid "Form Column"
+msgstr ""
+
+#: includes/metaboxes.php:96
+msgid "Unsubscription Settings"
+msgstr ""
+
+#: includes/metaboxes.php:103
+msgid "Administrator Emails"
+msgstr ""
 
 #: includes/theme_customizer.php:37
 msgid "Home"
@@ -178,6 +190,14 @@ msgid "Sorry, no post were found, check out our categories."
 msgstr ""
 "Lo sentimos, no se han encontrado artículos. Prueba desde nuestro menú de "
 "categorías."
+
+#: tpl-unsubscribe.php:43
+msgid "Ooops, there was an error."
+msgstr "Vaya, se ha producido un error."
+
+#: tpl-unsubscribe.php:44
+msgid "Email address is missing."
+msgstr "Falta la dirección de correo electrónico."
 
 #~ msgid "Sign up for our newsletter"
 #~ msgstr "Suscríbete a nuestra newsletter"
